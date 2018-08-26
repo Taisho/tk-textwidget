@@ -11,6 +11,17 @@ proc set_tags { } {
    .textwidget tag configure foo -font {Times 16 {bold italic}}
 }
 
+## ------------------------------------------------
+## This procedure parses text and creates tags
+## according to the Lang specified for use by a text
+## widget
+## ------------------------------------------------
+proc parseText { Text Lang } {
+}
+
+## ----------------------------------------------
+## Program execution starts here
+## ----------------------------------------------
 menu .menubar -type menubar
 .menubar add cascade -label File -menu .menubar.file -underline 0
 
