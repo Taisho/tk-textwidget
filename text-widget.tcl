@@ -4,6 +4,9 @@ proc set_tags { } {
    global .textwidget
 
    .textwidget insert 0.0 "Here is some text text text"
+   .textwidget tag add main 1.0 1.28
+   .textwidget tag configure main -background red
+
    .textwidget tag add foo 1.5 1.10
    .textwidget tag configure foo -font {Times 16 {bold italic}}
 }
